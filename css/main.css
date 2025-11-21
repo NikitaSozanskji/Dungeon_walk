@@ -1,5 +1,8 @@
 body {
     padding-top: 60px;
-
     /* background-image: url(/images/bg.jpg); */
+}
+
+a:link {
+  text-decoration: none;
 }
