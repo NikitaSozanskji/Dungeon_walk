@@ -1,5 +1,11 @@
 {
+  "scripts": {
+    "sass": "sass --watch sass:css"
+  },
   "dependencies": {
     "bootstrap": "5.3"
+  },
+  "devDependencies": {
+    "sass": "^1.97.0"
   }
 }

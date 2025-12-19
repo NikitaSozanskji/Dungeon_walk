@@ -1,145 +1,178 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dungeon walk</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dungeon Walk</title>
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
-    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
-    <link rel="stylesheet" href="css/main.css">
-  </head>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-  <!-- Here is navbar-->
-  <nav class="container navbar navbar-expand-lg bg-dark bg-gradient fixed-top">
-    <div class="container-fluid">
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark bg-gradient fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">Dungeon Walk</a>
 
-        <!-- Brand -->
-        <a class="navbar-brand text-white" href="#">Dungeon walk</a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavContent" aria-controls="navbarNavContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Mobile toggle -->
-        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavContent" aria-controls="navbarNavContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="collapse navbar-collapse" id="navbarNavContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active text-white" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#Features">Features</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#Gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#About">About</a></li>
+        </ul>
 
-        <!-- Collapsible area -->
-        <div class="collapse navbar-collapse" id="navbarNavContent">
-
-            <!-- Left nav items -->
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link active text-white" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Home</a>
-                </li>
-            </ul>
-
-            <!-- Right buttons -->
-            <div class="d-flex">
-                <button type="button" class="btn btn-outline-light me-2">Login</button>
-                <button type="button" class="btn btn-warning">Sign-up</button>
-            </div>
-
-        </div>
-    </div>
-</nav>
-
-  <body>
-
-
-
-    <div class="text-center p-5">
-      <div class="col-sm-12 ">
-            <h1>Welocome to dungeon walk</h1>
-      </div>
-    </div>
-    
-    <div class="container text-center p-2">
-      <div class="row">
-        <div class="col-sm-6">
-          <img src="images/wallBackground.png" alt=":(" class="img-fluid">
-        </div>
-        <div class="col-sm-6">
-          <h1>Welocome to dungeon walk</h1>
+        <div class="d-flex gap-2">
+          <button type="button" class="btn btn-outline-light">Login</button>
+          <button type="button" class="btn btn-warning">Sign up</button>
         </div>
       </div>
     </div>
+  </nav>
 
+  <!-- Carousel -->
+  <div id="myCarousel" class="carousel slide " data-bs-ride="carousel">
+  
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0"
+      class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+      aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+      aria-label="Slide 3"></button>
+  </div>
 
-    <div class="card container text-center p-1">
-      <div class="row">
-        <div class="col-sm-4 p-1">
-          <img src="images/placeholder.png" alt=":(" class="img-fluid rounded ">
-        </div>
-        <div class="col-sm-4 p-1">
-          <img src="images/placeholder.png" alt=":(" class="img-fluid rounded ">
-        </div>
-        <div class="col-sm-4 p-1">
-          <img src="images/placeholder.png" alt=":(" class="img-fluid rounded ">
-        </div>
-      </div>
-    </div>
+  <!-- Slides -->
+  <div id="Gallery" class="carousel-inner">
 
-    <div class="container text-center p-2">
-      <div class="row">
-        <div class="col-sm-6">
-          <h1>Welocome to dungeon walk</h1>
-        </div>
-        <div class="col-sm-6 p-2">
-          <img src="images/wallBackground.png" alt=":(" class="img-fluid ">
-        </div>
-      </div>
-    </div>
-    
-    <!-- Here is a footer -->
-    <div class=" bg-dark bg-gradient text-white"> 
-      <footer class="py-2 my-2 "> 
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3 col-sm-12"> 
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-white">Home</a>
-          </li> 
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-white">Features</a>
-          </li> 
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-white">Pricing</a>
-          </li> 
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-white">FAQs</a>
-          </li> 
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-white">About</a>
-          </li> 
-        </ul> 
-
-        <div class="container">
-          <div class="text-center">
-            <div class="row-sm-3">
-              <a style="text-decoration: none;" href="#">
-                <img src="images/icon/apple.png" alt="" style="width:140px">
-              </a>
-              <a style="text-decoration: none;" href="#">
-                <img src="images/icon/google.png" alt="" style="width:150px">
-              </a>
-            </div>
-            <div class="row-sm-3">
-              <p class="text-center">© 2025 Dungeon walk, Inc</p> 
-            </div>
-            
+    <!-- Slide 1 -->
+    <div class="carousel-item active bg-danger-subtle-custom ">
+      <section class="container text-center py-4">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <img src="images/wallBackground.png" alt="Dungeon wall" class="img-fluid">
+          </div>
+          <div class="col-md-6 text-white">
+            <h1>Welcome to Dungeon Walk</h1>
+            <p>Adventure, danger, and treasure await.</p>
           </div>
         </div>
-      </footer> 
+      </section>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+    <!-- Slide 2 -->
+    <div class="carousel-item bg-danger-subtle-custom ">
+      <section class="container text-center py-4">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <img src="images/wallBackground.png" alt="Dungeon wall" class="img-fluid">
+          </div>
+          <div class="col-md-6 text-white">
+            <h1>Fight the Darkness</h1>
+            <p>Monsters lurk in every corner.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item bg-danger-subtle-custom ">
+      <section class="container text-center py-4">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <img src="images/wallBackground.png" alt="Dungeon wall" class="img-fluid">
+          </div>
+          <div class="col-md-6 text-white">
+            <h1>Claim Your Treasure</h1>
+            <p>Only the brave survive.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button"
+    data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button"
+    data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+  </div>
+
+  <!-- Features -->
+  <section id="Features" class="container text-center py-4">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-white">
+        <h1>Discover the Features</h1>
+        <p>Explore dungeons, battle monsters, and find treasures.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/wallBackground.png" alt="Dungeon wall" class="img-fluid" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Cards -->
+  <section  id="Gallery" class="container py-3">
+    <div class="row g-3 text-center">
+      <div class="col-md-4"><img src="images/placeholder.png" alt="Feature 1" class="img-fluid rounded" /></div>
+      <div class="col-md-4"><img src="images/placeholder.png" alt="Feature 2" class="img-fluid rounded" /></div>
+      <div class="col-md-4"><img src="images/placeholder.png" alt="Feature 3" class="img-fluid rounded" /></div>
+    </div>
+  </section>
+
+  <!-- Section: Outro -->
+  <section  class="container text-center py-4">
+    <div id="About" class="row align-items-center">
+      <div class="col-md-6 text-white">
+        <h1>Enter the Darkness</h1>
+        <p>Your legend starts here.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/wallBackground.png" alt="Dungeon corridor" class="img-fluid" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark bg-gradient text-white py-4">
+    <div class="container">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+      </ul>
+
+      <div class="text-center mb-3">
+        <a href="#" class="me-2"><img src="images/icon/apple.png" alt="Download on App Store" style="width:140px" /></a>
+        <a href="#"><img src="images/icon/google.png" alt="Get it on Google Play" style="width:150px" /></a>
+      </div>
+
+      <p class="text-center mb-0">© 2025 Dungeon Walk, Inc.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
 </html>
